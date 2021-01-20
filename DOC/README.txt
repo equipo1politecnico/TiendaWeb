@@ -20,10 +20,10 @@ Tienda Web
 13.01.21 20:55 	Resultado:
 				Sergio Bazaga Granado 		PHP+HTML+BBDD
 				Sergio González Retamero	PHP+HTML
-				Garfieldrambo 				HTML
-				MiguelMoralesClase 			HTML
-				JyD 						HTML añade CSS
-				@aleksandrsamael 			HTML
+				Manuel Roldán 			HTML
+				Miguel Morales  		HTML
+				Alejandro José Aguilar Aldana	HTML añade CSS
+				Alexandre Ripill VIllegas 	HTML
 				
 
 13.01.21 20:59 	Encuesta : He creado mi cuenta personal en github:
@@ -32,10 +32,10 @@ Tienda Web
 				Resultado:
 				Sergio Bazaga Granado 		SI
 				Sergio González Retamero	SI
-				Garfieldrambo 				SI
-				MiguelMoralesClase 			SI
-				JyD 						SI
-				@aleksandrsamael 			SI
+				Manuel Roldán 			SI
+				Miguel Morales			SI
+				Alejandro José Aguilar Aldana	SI
+				Alexandre Ripill VIllegas	SI
 				
 
 13.01.21 21:31 	Encuesta : TENGO TIENDA 1.0 FUNCIONANDO:
@@ -46,21 +46,21 @@ Tienda Web
 				Resultado:
 				Sergio Bazaga Granado 		SI
 				Sergio González Retamero 	SI
-				Garfieldrambo 				SI
-				MiguelMoralesClase 			SI
-				JyD 						SI
-				@aleksandrsamael 			NO
+				Manuel Roldán			SI
+				Miguel Morales			SI
+				Alejandro José Aguilar Aldana	SI
+				Alexandre Ripill VIllegas 	SI
 				
 
 
 
 13.01.21 22:16 	Se distribuye inicialmente el trabajo a realizar:
-				@JyDGamerESP Index, CSS, revisión y depuración de código HTML del resto de compañeros.
-				@MiguelMoralesClase formularios de búsqueda cliente y productos.
-				@manolorv97 formularios insertar cliente y productos.
+				@JyDGamerESP (Alejandro José Aguilar Aldana) - Index, CSS, revisión y depuración de código HTML del resto de compañeros.
+				@MiguelMoralesClase (Miguel Morales) - Formularios de búsqueda cliente y productos.
+				@manolorv97 (Manuel Roldán) - Formularios insertar cliente y productos.
 				@Sergio González Retamero PHP buscar clientes.
 				@Sergio Bazaga Granado PHP insertar clientes.
-				otr revision y depuracion de codigo php del resto de compañeros, doc history.
+				otra revision y depuracion de codigo php del resto de compañeros, doc history.
 				
 
 13.01.21 22:48 	Propuesta por parte de JyDGamer ESP:
@@ -113,3 +113,5 @@ Se pregunta a Alejandro Aguilar y a Miguel Ángel Morales
 16.01.21 13:30	Alejandro Aguilar contesta, se aclaran dudas, se dispone a trabajar. Se esclarece que es el responsable del personal de html y de su seguimiento y evolución.
 
 16.01.21 17:43 Sergio González Retamero realiza subida de buscarClientes.php.
+
+20.01.21 15:45 Alexandre Ripoll Villegas ha modificado buscarProductos.php para simplificarlo y optimizarlo.
