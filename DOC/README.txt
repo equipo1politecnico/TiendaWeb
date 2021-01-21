@@ -89,12 +89,20 @@ Tienda Web
 15.01.21 13:02 	Sergio Bazaga Granado terminado insertarClientes.php
 
 15.01.21 18:17 	Se realiza control de estado del trabajo:
-				@Sergio González Retamero PHP buscar ✅
-				@Sergio Bazaga Granado PHP insertar ✅
-				@manolorv97  insertarclientes PHP
-				@MiguelMoralesClase Buscar Clientes PHP
-				@JyDGamerESP revisar html y CSS
-				@aleksandrsamael  revisar PHP y el historial (readme)
+
+				HTML 
+				
+				Insertar clientes/productos - Manuel Roldán.
+				Buscar clientes/productos - Miguel Morales.
+				Responsable de codigo - Alejandro José Aguilar Aldana ( Index, CSS)
+				
+				PHP
+				
+				Insertar clientes/productos - Sergio Bazaga Granado.
+				Buscar clientes/productos - Sergio González Retamero.
+				Responsable de codigo - Alexandre Ripoll Villegas (doc history)
+		
+				
 
 15.01.21 18:19	Sergio González Retamero realiza puntualizacion:
 				Hay un documento más que es el de descripción rn el que se dice qué hace cada archivo
@@ -115,3 +123,5 @@ Se pregunta a Alejandro Aguilar y a Miguel Ángel Morales
 16.01.21 17:43 Sergio González Retamero realiza subida de buscarClientes.php.
 
 20.01.21 15:45 Alexandre Ripoll Villegas ha modificado buscarProductos.php para simplificarlo y optimizarlo.
+
+21.01.21 11:41 Sergio González Retamero actualiza buscarProductos.php y buscarClientes.php.
