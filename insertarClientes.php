@@ -19,8 +19,7 @@ if (!$conn) {
 echo "Se ha conectado correctamente";
 echo "<br>";
 echo "<br>";
-
-$sql = "INSERT INTO productos (CodProducto, Descripcion, Precio, Stock) VALUES ($codprod, '$descripcionget', $precioget, $stockget)";
+$sql = "INSERT INTO clientes (nombre, apellidos, dni, email, fecha_de_nacimiento) VALUES ('$nombrecliente', '$apellidoscliente', '$dni', '$emailcliente', '$fecha_de_nacimiento')";
 if (mysqli_query($conn, $sql)) {
       echo "<p>Nueva entrada guardada</p>";
 
@@ -30,8 +29,8 @@ if (mysqli_query($conn, $sql)) {
 
 ?></center>
 
-<p align="center"><a href="insertar.html">Insertar Productos</a></p>
-<p align="center"><a  href="buscar.html">Buscar Productos</a></p>
+<p align="center"><a href="insertarClientes.html">Insertar Clientes</a></p>
+<p align="center"><a  href="buscarClientes.html">Buscar Clientes</a></p>
 <p align="center"><a  href="indice.html">Volver al Indice</a></p>
 
 
