@@ -5,13 +5,15 @@
 body {
   font-family: "Inconsolata", monospace;
   background-color: #eeeeee;
+  margin: 0;
 }
 
 /*Cabecera de la web edicion del Titulo y el fondo del mismo*/
 div.cabeza {
-  text-shadow: 2px 2px white;
-  padding: 5px 5px 5px 25px;
-  margin: -8px -8px 10px -8px;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  width: 100%;
   background: rgba(81, 152, 59, 1);
   background: -moz-linear-gradient(
     top,
@@ -47,10 +49,110 @@ div.cabeza {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51983b', endColorstr='#76d758', GradientType=0 );
 }
 
+h1 {
+  backdrop-filter: blur(5px);
+  float: left;
+  position: relative;
+  top: 9px;
+  margin: 0 30px 0 10px;
+}
+
+div.menu {
+  padding: 0px 10px 15px 260px;
+  font-size: 30px;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+#header {
+  margin: auto;
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.nav {
+  margin-top: 0px;
+  line-height: 28px;
+  z-index: 1;
+}
+
+.nav > li {
+  float: left;
+}
+
+.nav li a {
+  /* color: #fff; */
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.smenu a{
+  background-color: #eee;
+}
+
+.smenu a:hover {
+  background-color: rgb(81, 152, 59);
+}
+
+.nav li a:hover {
+  background-color: #eee;
+  height: 30px;
+}
+
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  padding: 0;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+
+
+a.boton {
+  padding: 50px 10px 5px 5px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a.boton:hover {
+  color: #1883ba;
+  /* background-color: #eeeeee; */
+}
+
+div.indice {
+  margin: 10px 200px 10px 200px;
+}
+
 /*estilo del cuerpo de la web
 engloba todo el contenido*/
 div.cuerpo {
-  margin: 10px 200px 10px 200px;
+  z-index: -1;
+  position: relative;
+  top: 75px;
+  margin: 0 15%;
+  padding-left: 10px;
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -58,19 +160,21 @@ div.cuerpo {
 }
 
 div.subtitulo {
+  padding: 0px 0px 0px 10px;
 }
 
-div.menu {
+div.formulario {
 }
 
-a.boton {
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border: 5px outset #356e2e;
+img.icono {
+  width: 50px;
+  height: 50px;
 }
 
-a.boton:hover {
-  color: #1883ba;
-  background-color: #eeeeee;
+/* adaptación > responsive < a partir de aquí */
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 200px) {
 }
