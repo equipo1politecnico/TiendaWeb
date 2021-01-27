@@ -8,6 +8,11 @@ $servername = "192.168.31.3";
 $username = "equipoa";
 $password = "politecnico";
 $dbname = "pruebas";
+$nombrecliente = $_POST["nombrecliente"];
+$apellidoscliente = $_POST["apellidoscliente"];
+$dni = $_POST["dni"];
+$emailcliente = $_POST["emailcliente"];
+$fecha_de_nacimiento = $_POST["fecha_de_nacimiento"];
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -8,6 +8,10 @@ $servername = "192.168.31.3";
 $username = "equipoa";
 $password = "politecnico";
 $dbname = "pruebas";
+$codprod = $_POST["codprod"];
+$descripcionget = $_POST["descripcionget"];
+$precioget = $_POST["precioget"];
+$stockget = $_POST["stockget"];
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
