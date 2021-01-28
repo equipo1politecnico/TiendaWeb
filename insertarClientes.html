@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html  lang="es">
 
 <head>
 	<meta charset='utf-8'>
@@ -27,24 +27,29 @@
 			</li>
 		</ul>
 	</div>
-			<div class="cuerpo">
-				<h2>Insertar producto</h2>
-				<form action="insertarProducto.php" method="post">
-					<p>C&oacute;digo de producto: <input type="text" name="codprod" id="codprod"
-							placeholder="Inserte código..."></p>
-					<p>Descripcion: <input type="text" name="descripcionget" id="descripcionget"
-							placeholder="Inserte descripci&oacute;n"></p>
-					<p>Precio: <input type="text" name="precioget" id="precioget" placeholder="Inserte precio..."></p>
-					<p>Cantidad: <input type="text" name="stockget" id="stockget" placeholder="Inserte cantidad..."></p>
-					<input type="submit" value="Enviar">
-						&nbsp
-						<input align="center" type="reset" value="Borrar">
-				</form>
-			</div>
-		</div>
+	<div class="cuerpo">
+		<h2>Alta cliente</h2>
+		<form action="insertarClientes.php" method="post">
+			<p>Nombre: <input type="text" name="nombrecliente" id="nombrecliente"
+					placeholders="nombrecliente"></p>
+
+			<p>Apellidos: <input type="text" name="apellidoscliente" id="apellidoscliente"
+					placeholders="apellidoscliente"></p>
+
+			<p>DNI: <input type="text" name="dni" id="dni" placeholders="dni"></p>
+
+			<p>Email: <input type="text" name="emailcliente" id="emailcliente"
+					placeholders="emailcliente"></p>
+
+			<p>Fecha de Nacimiento: <input type="date" name="fecha_de_nacimiento"
+					id="fecha_de_nacimiento" placeholders="fecha_de_nacimiento"></p>
+
+			<input type="submit" value="Enviar"> &nbsp <input align="center" type="reset"
+					value="Borrar">
+		</form>
 	</div>
 	<!--Sergio Bazaga Granado-->
-	<!--Corregido por Miguel Morales Peral-->
+
 </body>
 
 </html>
