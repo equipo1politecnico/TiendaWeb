@@ -1,0 +1,5 @@
+El archivo insertar clientes php realizara la funcion de insertar clientes en la base de datos de la siguiente forma:
+
+- Realizar una conexion con el servidor a la base de datos.
+- Si la conexion es correcta seguira si es incorrecta devolvera un mensaje de error.
+- Si conexion es correcta recogera los datos de la pagina html que ha recogido los datos.
