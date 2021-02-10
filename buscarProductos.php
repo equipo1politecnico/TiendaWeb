@@ -41,7 +41,7 @@ mysqli_close($conn);
 
 <p align="center"><a href="index.html">Insertar Productos</a></p>
 <p align="center"><a  href="buscar.html">Buscar Productos</a></p>
-<p align="center"><a  href="indice.html">Volver al Indice</a></p>
+<p align="center"><a  href="index.html">Volver al Indice</a></p>
 
 </body>
 </html>
