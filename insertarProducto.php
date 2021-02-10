@@ -4,7 +4,7 @@
 <body>
 
 <?php
-$servername = "192.168.31.3";
+$servername = "192.168.31.53";
 $username = "equipoa";
 $password = "politecnico";
 $dbname = "pruebas";
@@ -36,7 +36,7 @@ if (mysqli_query($conn, $sql)) {
 
 <p align="center"><a href="insertar.html">Insertar Productos</a></p>
 <p align="center"><a  href="buscar.html">Buscar Productos</a></p>
-<p align="center"><a  href="indice.html">Volver al Indice</a></p>
+<p align="center"><a  href="index.html">Volver al Indice</a></p>
 
 
 </body>
