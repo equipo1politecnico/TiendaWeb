@@ -23,13 +23,13 @@ echo "<br>";
 $busqueda = $_POST["busquedaget"];
 $categoria = $_POST["buscarpor"];
 
-$funcion_sql = "SELECT * FROM productos WHERE $categoria LIKE '%$busqueda%'";
+$funcion_sql = "SELECT * FROM clientes WHERE $categoria LIKE '%$busqueda%'";
 $resultado = mysqli_query($conn, $funcion_sql);
 
 if (mysqli_num_rows($resultado) > 0) {
     // output data of each row
     while($row = mysqli_fetch_assoc($resultado)) {
-        echo "Código: " . $row["CodProducto"]. " - Descripción: " . $row["Descripcion"]. " - Precio: " . $row["Precio"]. " - Stock: " . $row["Stock"]. "<br>";
+        echo "Nombre: " . $row["nombre"]. " - Apellidos: " . $row["apellidos"]. " - DNI: " . $row["dni"]. " - EMail: " . $row["email"]. " Fecha de nacimiento: " . $row["fecha_de_nacimiento"]. "<br>";
     }
 } else {
     echo "No se ha encontrado ningún resultado.";

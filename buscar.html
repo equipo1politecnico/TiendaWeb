@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset='utf-8'>
-	<link rel="stylesheet" href="style.css">
-	<title>TIENDA WEB 1.0</title>
-</head>
-
-<body>
-	<div>
-		<div class="cabeza">
-			<h1 align="center">Tienda Web V1.0</h1>
-
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href=".\style.css" type="text/css">
+		<title>TIENDA WEB 1.0</title>
+	</head>
+	<body>
+		<div>
+			<div class="cabeza">
+				<h1>Tienda Web V1.0</h1>
+				<ul class="nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Productos</a>
+						 <ul class="smenu">
+							<li><a href="insertar.html">Insertar Productos</a></li>
+							<li><a href="buscar.html">Buscar Productos</a></li>
+						 </ul>
+					</li>
+					<li><a href="">Clientes</a>
+						<ul class="smenu">
+							<li><a href="insertarClientes.html">Alta Cliente</a></li>
+							<li><a href="buscarClientes.html">Buscar Cliente</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="cuerpo">
+				<div class="subtitulo">
+					<h2>Buscar producto</h2>
+				</div>
+				<div class="formulario">
+					<form action=".\buscarProductos.php" method="post">
+						<p>Producto a Buscar: <input type="text" name="busquedaget" id="busquedaget" placeholder="Escriba su b&uacute;squeda..."></p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="CodProducto">C&oacute;digo de Producto</p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="Descripcion">Descripci&oacute;n</p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="Precio">Precio</p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="Stock">Stock</p>
+						<p><input type="submit" value="Enviar"> &nbsp <input type="reset" value="Borrar"></p>						
+						<p><a href="indice.html">Volver al &Iacute;ndice</a></p>						
+					</form>
+				</div>
+			</div>			
 		</div>
-		<div class="cuerpo">
-			<div class="subtitulo">
-				<h2 align="center">Buscar producto</h2>
-
-			</div>
-			<div class="formulario">
-				<form action="buscarProductos.php" method="post">
-
-					<p align="center">Datos a buscar: <input type="text" name="busquedaget" id="busquedaget"
-							placeholders="busqueda"></p>
-					<p align="center">
-						<input type="radio" id="buscarpor" name="buscarpor" value="CodProducto">CodProducto<br>
-						<input type="radio" id="buscarpor" name="buscarpor" value="Descripcion">Descripcion<br>
-						<input type="radio" id="buscarpor" name="buscarpor" value="Precio">Precio<br>
-						<input type="radio" id="buscarpor" name="buscarpor" value="Stock">Stock<br>
-					</p>
-
-
-
-					<p align="center"><input type="submit" value="Enviar"> &nbsp <input align="center" type="reset"
-							value="Borrar">
-					</p>
-				</form>
-
-			</div>
-			<div>
-				<p align="center"><a href="indice.html">Volver al Indice</a></p>
-			</div>
-		</div>
-
-	</div>
-	<!--Sergio Bazaga Granado-->
-
-</body>
-
+		<!--Creado por Miguel Ángel Morales Peral-->
+	</body>
 </html>

@@ -8,10 +8,11 @@ $servername = "192.168.31.53";
 $username = "equipoa";
 $password = "politecnico";
 $dbname = "pruebas";
-$codprod = $_POST["codprod"];
-$descripcionget = $_POST["descripcionget"];
-$precioget = $_POST["precioget"];
-$stockget = $_POST["stockget"];
+$nombrecliente = $_POST["nombrecliente"];
+$apellidoscliente = $_POST["apellidoscliente"];
+$dni = $_POST["dni"];
+$emailcliente = $_POST["emailcliente"];
+$fecha_de_nacimiento = $_POST["fecha_de_nacimiento"];
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -23,8 +24,7 @@ if (!$conn) {
 echo "Se ha conectado correctamente";
 echo "<br>";
 echo "<br>";
-
-$sql = "INSERT INTO productos (CodProducto, Descripcion, Precio, Stock) VALUES ($codprod, '$descripcionget', $precioget, $stockget)";
+$sql = "INSERT INTO clientes (nombre, apellidos, dni, email, fecha_de_nacimiento) VALUES ('$nombrecliente', '$apellidoscliente', '$dni', '$emailcliente', '$fecha_de_nacimiento')";
 if (mysqli_query($conn, $sql)) {
       echo "<p>Nueva entrada guardada</p>";
 
@@ -34,8 +34,8 @@ if (mysqli_query($conn, $sql)) {
 
 ?></center>
 
-<p align="center"><a href="insertar.html">Insertar Productos</a></p>
-<p align="center"><a  href="buscar.html">Buscar Productos</a></p>
+<p align="center"><a href="insertarClientes.html">Insertar Clientes</a></p>
+<p align="center"><a  href="buscarClientes.html">Buscar Clientes</a></p>
 <p align="center"><a  href="index.html">Volver al Indice</a></p>
 
 
