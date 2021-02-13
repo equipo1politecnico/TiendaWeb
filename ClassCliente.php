@@ -3,11 +3,11 @@ require './ClassEnvioMail.php';
 require 'vendor/autoload.php';
 
 class Cliente {
-    public $nombre;
-    public $apellidos;
-    public $dni;
-    public $email;
-    public $fecha_de_nacimiento;
+    private $nombre;
+    private $apellidos;
+    private $dni;
+    private $email;
+    private $fecha_de_nacimiento;
 
     function __construct($nombre, $apellidos, $dni, $email, $fecha_de_nacimiento) {
         $this->nombre = $nombre;
