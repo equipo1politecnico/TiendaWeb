@@ -129,9 +129,27 @@ Se pregunta a Alejandro Aguilar y a Miguel Ángel Morales
 28.01.21 17:03 Sergio González Retamero realiza el borrado de archivo obsoleto 
 	       buscarProducto.php (Tienda 1.0) de la rama main del repositorio.
 
+31.01.21 17:45 Sergio Bazaga Granado ha realizado el merge de la rama HTML.
 
+04.02.21 10:24 Se releva el jefe de equipo, que por votación pasa a ser Sergio González.
 
+11.02.21 21:57 Se deciden dar los siguientes roles en el grupo:
 
+		Crear ClassCliente.php - Sergio G.
+		Crear ClassProducto.php - Alejandro A.
 
+		Composer:
+			PHPMailer: ClassEnvioMail.php - Sergio B.
 
+		Adaptar a POO:
+			buscarCliente.php - Miguel
+			insertarCliente.php - Miguel
 
+ 			buscarProducto.php - Manuel 
+ 			insertarProducto.php - Manuel
+
+		Tests:
+			ClassClienteTest.php - Alexandre 
+ 			ClassProductoTest.php - Alexandre
+
+11.02.21 21:58 Se mantiene el rol de history de Alexandre Ripoll Villegas y mantenimiento del server de Sergio Bazaga Granado.
