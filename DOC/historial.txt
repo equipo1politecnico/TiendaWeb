@@ -153,3 +153,5 @@ Se pregunta a Alejandro Aguilar y a Miguel Ángel Morales
  			ClassProductoTest.php - Alexandre
 
 11.02.21 21:58 Se mantiene el rol de history de Alexandre Ripoll Villegas y mantenimiento del server de Sergio Bazaga Granado.
+
+16.02.21 20:33 Alexandre Ripoll Villegas actualiza los archivos insertarProducto.php y buscarProductos.php a POO-
