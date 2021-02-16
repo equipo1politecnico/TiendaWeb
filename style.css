@@ -5,11 +5,11 @@
 body {
   font-family: "Inconsolata", monospace;
   background-color: #eeeeee;
-  margin: 0;
 }
 
 /*Cabecera de la web edicion del Titulo y el fondo del mismo*/
 div.cabeza {
+  z-index: 1;
   height: 50px;
   top: 0;
   position: fixed;
@@ -81,7 +81,6 @@ ol {
 .nav {
   margin-top: 0px;
   line-height: 28px;
-  z-index: 1;
 }
 
 .nav > li {
@@ -149,7 +148,7 @@ div.indice {
 /*estilo del cuerpo de la web
 engloba todo el contenido*/
 div.cuerpo {
-  z-index: -1;
+  /* z-index: -1; */
   position: relative;
   top: 75px;
   margin: 0 15%;
@@ -164,7 +163,8 @@ div.subtitulo {
   padding: 0px 0px 0px 10px;
 }
 
-div.formulario {
+form {
+  margin-bottom: 15px;
 }
 
 img.icono {
