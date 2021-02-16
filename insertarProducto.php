@@ -1,43 +1,36 @@
-<!DOCTYPE html>
-<html>
-<meta charset='utf-8' >
-<body>
-
 <?php
-$servername = "192.168.31.3";
+
+require './ClassProducto.php';
+
+// Variables 
+$servername = "localhost";
 $username = "equipoa";
 $password = "politecnico";
-$dbname = "pruebas";
-$codprod = $_POST["codprod"];
-$descripcionget = $_POST["descripcionget"];
-$precioget = $_POST["precioget"];
-$stockget = $_POST["stockget"];
+$dbname = "productos";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+$cod = $_POST["cod"];
+$descripcion = $_POST["descripcion"];
+$precio = $_POST["precio"];
+$stock = $_POST["stock"];
+
+
+// Establecer conexión con la base de datos
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+  die("Error de conexión: " . $conn->connect_error);
 }
 
-echo "Se ha conectado correctamente";
-echo "<br>";
-echo "<br>";
+//Creamos un objeto cliente y le pedimos el alta.
 
-$sql = "INSERT INTO productos (CodProducto, Descripcion, Precio, Stock) VALUES ($codprod, '$descripcionget', $precioget, $stockget)";
-if (mysqli_query($conn, $sql)) {
-      echo "<p>Nueva entrada guardada</p>";
+$productoNuevo = new Producto($cod,$descripcion,$precio,$stock);
 
-} else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
-?></center>
-
-<p align="center"><a href="insertar.html">Insertar Productos</a></p>
-<p align="center"><a  href="buscar.html">Buscar Productos</a></p>
-<p align="center"><a  href="indice.html">Volver al Indice</a></p>
+$productoNuevo->darAlta($conn);
 
 
-</body>
-</html>
+// Cerrar la conexion a la base de datos
+$conn->close();
+
+
+?>
