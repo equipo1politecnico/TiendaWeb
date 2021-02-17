@@ -1,44 +1,40 @@
-<!DOCTYPE html>
-<html>
-<meta charset='utf-8' >
-<body>
-
 <?php
+require './ClassProducto.php';
+ // Variables
 $servername = "192.168.31.53";
 $username = "equipoa";
 $password = "politecnico";
 $dbname = "pruebas";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
 
-echo "Se ha conectado correctamente";
-echo "<br>";
-echo "<br>";
+
+// Variables 
+
 
 $busqueda = $_POST["busquedaget"];
 $categoria = $_POST["buscarpor"];
 
-$funcion_sql = "SELECT * FROM productos WHERE $categoria LIKE '%$busqueda%'";
-$resultado = mysqli_query($conn, $funcion_sql);
 
-if (mysqli_num_rows($resultado) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($resultado)) {
-        echo "Código: " . $row["CodProducto"]. " - Descripción: " . $row["Descripcion"]. " - Precio: " . $row["Precio"]. " - Stock: " . $row["Stock"]. "<br>";
-    }
-} else {
-    echo "No se ha encontrado ningún resultado.";
+// Establecer conexión con la base de datos
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+  die("Error de conexión: " . $conn->connect_error);
 }
 
-mysqli_close($conn);
+//Pedimos que se nos realize la búsqueda del cliente
+
+$buscarProducto->buscar($busqueda,$categoria,$conn);
+
+
+// Cerrar la conexion a la base de datos
+$conn->close();
+
+
 
 ?>
-
+=======
 <p align="center"><a href="index.html">Insertar Productos</a></p>
 <p align="center"><a  href="buscar.html">Buscar Productos</a></p>
 <p align="center"><a  href="index.html">Volver al Indice</a></p>
