@@ -21,7 +21,7 @@ class Cliente {
     function darAlta($conn) {
         // Consulta para realizar inserción a la base de datos
 
-        $sql = "INSERT INTO Clientes (dni,nombre,apellidos,email,fecha_de_nacimiento) VALUES ('".$this->dni."','".$this->nombre."','".$this->apellidos."','".$this->email."','".$this->fecha_de_nacimiento."');";
+        $sql = "INSERT INTO clientes (dni,nombre,apellidos,email,fecha_de_nacimiento) VALUES ('".$this->dni."','".$this->nombre."','".$this->apellidos."','".$this->email."','".$this->fecha_de_nacimiento."');";
 
         if ($conn->query($sql) === TRUE) {
             echo "Nuevo registro creado con éxito.";
@@ -43,7 +43,7 @@ class Cliente {
     function buscar($busqueda,$categoria,$conn) {
 
         // Consulta para realizar la búsqueda en la base de datos
-        $sql = "SELECT * FROM Clientes WHERE ";
+        $sql = "SELECT * FROM clientes WHERE ";
         switch ($categoria){
             case "nombre":
                 $sql = $sql."nombre like '%$busqueda%';";
