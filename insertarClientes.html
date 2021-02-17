@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html  lang="es">
 
 <head>
 	<meta charset='utf-8'>
@@ -28,24 +28,28 @@
 		</ul>
 	</div>
 	<div class="cuerpo">
-		<h2>Insertar producto</h2>
-		<form action="insertarProducto.php" method="post">
-			<p>Código de producto: <input type="text" name="codprod" id="codprod"></p>
+		<h2>Alta cliente</h2>
+		<form action="insertarClientes.php" method="post">
+			<p>Nombre: <input type="text" name="nombrecliente" id="nombrecliente"
+					placeholders="nombrecliente"></p>
 
-			<p>Descripcion: <input type="text" name="descripcionget" id="descripcionget"></p>
+			<p>Apellidos: <input type="text" name="apellidoscliente" id="apellidoscliente"
+					placeholders="apellidoscliente"></p>
 
-			<p>Precio: <input type="text" name="precioget" id="precioget"></p>
+			<p>DNI: <input type="text" name="dni" id="dni" placeholders="dni"></p>
 
-			<p>Cantidad: <input type="text" name="stockget" id="stockget"></p>
+			<p>Email: <input type="text" name="emailcliente" id="emailcliente"
+					placeholders="emailcliente"></p>
+
+			<p>Fecha de Nacimiento: <input type="date" name="fecha_de_nacimiento"
+					id="fecha_de_nacimiento" placeholders="fecha_de_nacimiento"></p>
 
 			<button type="submit">ENVIAR</button>
 			<button type="reset">BORRAR</button>
 		</form>
 	</div>
-	</div>
-	</div>
-	<!-- Sergio Bazaga Granado -->
-	<!-- Corregido por Miguel Morales Peral -->
+	<!--Sergio Bazaga Granado-->
+
 </body>
 
 </html>

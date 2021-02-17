@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href=".\style.css" type="text/css">
+	<title>TIENDA WEB 1.0</title>
+</head>
+
+<body>
+	<div class="cabeza">
+		<h1>Tienda Web V1.0</h1>
+		<ul class="nav">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="">Productos</a>
+				<ul class="smenu">
+					<li><a href="insertar.html">Insertar Productos</a></li>
+					<li><a href="buscar.html">Buscar Productos</a></li>
+				</ul>
+			</li>
+			<li><a href="">Clientes</a>
+				<ul class="smenu">
+					<li><a href="insertarClientes.html">Alta Cliente</a></li>
+					<li><a href="buscarClientes.html">Buscar Cliente</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="cuerpo">
+		<div class="subtitulo">
+			<h2>Buscar Cliente</h2>
+		</div>
+		<div class="formulario">
+			<form action=".\buscarClientes.php" method="post">
+				<p>Cliente a Buscar: <input type="text" id="busquedaget" name="busquedaget"
+						placeholder="Escriba su b&uacute;squeda..."></p>
+				<p> <input type="radio" id="buscarpor" name="buscarpor" value="NIF" checked>
+				NIF</p>
+				<p> <input type="radio" id="buscarpor" name="buscarpor" value="nombre">
+				Nombre</p>
+				<p> <input type="radio" id="buscarpor" name="buscarpor" value="apellido">
+				Apellido</p>
+				<p> <input type="radio" id="buscarpor" name="buscarpor" value="email">
+				E-mail</p>
+				<p> <input type="radio" id="buscarpor" name="buscarpor" value="fechanacimiento">
+				Fecha de nacimiento</p> 
+
+				<button type="submit">ENVIAR</button>
+				<button type="reset">BORRAR</button>
+			</form>
+		</div>
+	</div>
+	<!--Creado por Miguel Ángel Morales Peral-->
+</body>
+
+</html>

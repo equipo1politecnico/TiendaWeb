@@ -1,0 +1,157 @@
+13.01.21 20:51	Creada cuenta github del grupo de trabajo con los siguientes datos: 
+				Cuenta GitHub
+				User: sbazgra003.alumnado@politecnicomalaga.com
+				Password: Politécnico.1
+
+13.01.21 20:54 	Encuesta : Me manejo mejor en el siguiente campo: 
+				- PHP
+				- HTML
+				- BBDD
+				- CSS
+				- PHP+HTML
+				- PHP+HTML+BBDD
+				- HTML+BBDD
+				- PHP+BBDD
+				- Todas
+				- Ninguna
+
+13.01.21 20:55 	Resultado:
+				Sergio Bazaga Granado 		PHP+HTML+BBDD
+				Sergio González Retamero	PHP+HTML
+				Manuel Roldán 			HTML
+				Miguel Morales	 		HTML
+				Alejandro Aguilar		HTML añade CSS
+				Alexandre Ripoll Villegas	HTML
+				
+
+13.01.21 20:59 	Encuesta : He creado mi cuenta personal en github:
+				- Si
+				- No
+				Resultado:
+				Sergio Bazaga Granado 		SI
+				Sergio González Retamero	SI
+				Manuel Roldán 			SI
+				Miguel Morales	 		SI
+				Alejandro Aguilar		SI
+				Alexandre Ripoll Villegas	SI
+				
+
+13.01.21 21:31 	Encuesta : TENGO TIENDA 1.0 FUNCIONANDO:
+				- SOLO HTML
+				- SOLO PHP
+				- TODO
+				- ALGUNOS FALLOS
+				Resultado:
+				Sergio Bazaga Granado 		SI
+				Sergio González Retamero 	SI
+				Manuel Roldán 			SI
+				Miguel Morales  		SI
+				Alejandro Aguilar		SI
+				Alexandre Ripoll Villegas	SI
+				
+
+
+
+13.01.21 22:16 	Se distribuye inicialmente el trabajo a realizar:
+				Alejandro Aguilar Index, CSS, revisión y depuración de código HTML del resto de compañeros.
+				Miguel Morales - formularios de búsqueda cliente y productos.
+				Manuel Roldán - formularios insertar cliente y productos.
+				Sergio González Retamero PHP buscar clientes.
+				Sergio Bazaga Granado PHP insertar clientes.
+				otr revision y depuracion de codigo php del resto de compañeros, doc history.
+				
+
+13.01.21 22:48 	Propuesta por parte de JyDGamer ESP:
+				Para el CSS se pueden coger elementos de aqui https://materializecss.com/about.html
+				Se aprueba, se deja a eleccion, siendo este el responsable del diseño y optimizacion.
+
+13.01.21 23:10]	Se monta el servidor para trabajar:
+				Srv: 192.168.31.3
+				usuario: iawequipoa
+				password: politecnico
+
+13.01.21 23:22	Se implementa la BD con las tablas, campos y algunos datos.
+				BD: 192.168.31.3
+				usuario: equipoa
+				password: politecnico
+
+14.01.21 14:12	Se esclarece:
+				Se puede probrar los codigos directamente en la maquina, antes hay que subir los archivos en la carpeta /var/www/html, ya hay una copia de prueba.
+				En ese caso el codigo puede apuntar a 127.0.0.1, si probais desde vuestra maquina, el codigo debera apuntar a 192.168.31.3, para que ataque al server.
+
+14.01.21 14:26	Primer commit realizado, subido proyecto, se puede realizar el clone en los distintos colaboradores.
+
+15.01.21 13:02 	Sergio González Retamero terminado buscarClientes.php
+				Anotacion: he dejado localhost en mi php porque en principio, la base de datos se encuentra en el propio servidor
+
+15.01.21 13:02 	Sergio Bazaga Granado terminado insertarClientes.php
+
+15.01.21 18:17 	Se realiza control de estado del trabajo:
+				Sergio González Retamero PHP buscar ✅
+				Sergio Bazaga Granado PHP insertar ✅
+				Manuel Roldán - insertarclientes PHP
+				Miguel Morales - Buscar Clientes PHP
+				Alejandro Aguilar revisar html y CSS
+				Alexandre Ripoll Villegas  revisar PHP y el historial (readme)
+
+15.01.21 18:19	Sergio González Retamero realiza puntualizacion:
+				Hay un documento más que es el de descripción rn el que se dice qué hace cada archivo
+
+15.01.21 18:21 	Se esclarece:
+				Cada usuario realiza documentacion de la parte asignada con la descripción y cuando este andando todo terminado, se refundide en un solo documento.
+
+16.01.21 13:02 Sergio Bazaga Granado realiza subida de insertarCliente.php.
+ 
+Se pregunta a Alejandro Aguilar y a Miguel Ángel Morales
+16.01.21 13:18 como lo llevas?
+16.01.21 13:18 estas atrancado?
+16.01.21 13:18 necesitas ayuda?
+ - Quedando a la espera de respuesta
+
+16.01.21 13:30	Alejandro Aguilar contesta, se aclaran dudas, se dispone a trabajar. Se esclarece que es el responsable del personal de html y de su seguimiento y evolución.
+
+16.01.21 17:43 Sergio González Retamero realiza subida de buscarClientes.php.
+
+26.01.21 15:23 Sergio González Retamero realiza el borrado de archivos y ramas de Github para 
+	       un reinicio de proyecto y procedimiento, que ahora se realizará usando Git por 
+	       comandos, en lugar del navegador web. Subida del proyecto base (Tienda 1.0) a 
+	       la rama "main". Creación de la rama "PHP" y subida de buscarClientes.php y 
+	       buscarProductos.php a la rama "PHP".
+
+26.01.21 17:35 Sergio Bazaga Granado realiza subida del archivo insertar.php
+
+27.01.21 21:52 Sergio González Retamero realiza subida de archivos HTML que creó Miguel Morales, 
+	       a la rama HTML desde su cuenta.
+
+28.01.21 2:13 Alexandre Ripoll Villegas realiza el merge de la rama php a la rama principal.
+
+
+28.01.21 17:03 Sergio González Retamero realiza el borrado de archivo obsoleto 
+	       buscarProducto.php (Tienda 1.0) de la rama main del repositorio.
+
+31.01.21 17:45 Sergio Bazaga Granado ha realizado el merge de la rama HTML.
+
+04.02.21 10:24 Se releva el jefe de equipo, que por votación pasa a ser Sergio González.
+
+11.02.21 21:57 Se deciden dar los siguientes roles en el grupo:
+
+		Crear ClassCliente.php - Sergio G.
+		Crear ClassProducto.php - Alejandro A.
+
+		Composer:
+			PHPMailer: ClassEnvioMail.php - Sergio B.
+
+		Adaptar a POO:
+			buscarCliente.php - Miguel
+			insertarCliente.php - Miguel
+
+ 			buscarProducto.php - Manuel 
+ 			insertarProducto.php - Manuel
+
+		Tests:
+			ClassClienteTest.php - Alexandre 
+ 			ClassProductoTest.php - Alexandre
+
+11.02.21 21:58 Se mantiene el rol de history de Alexandre Ripoll Villegas y mantenimiento del server de Sergio Bazaga Granado.
+
+16.02.21 20:33 Alexandre Ripoll Villegas actualiza los archivos insertarProducto.php y buscarProductos.php a POO-

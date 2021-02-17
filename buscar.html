@@ -1,21 +1,48 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8"/>
-</head>
-<h1>Tienda Web V1.0</h1>
-<h2>Buscar producto</h2>
-<form action="buscarProducto.php" method="post">
-<label for="busqueda">Buscar producto: </label><input type="text" name="busqueda">
-<br><br>
-<select name="categoria">
-  <option value="cod">Por código</option>
-  <option value="descripcion">Por descripción</option><br>
-  <option value="precio">Por precio</option><br>
-</select>
-<br><br>
-<input type="submit" value="Enviar">
-<input type="reset" value="Reiniciar">
-</form>
-</body>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href=".\style.css" type="text/css">
+		<title>TIENDA WEB 1.0</title>
+	</head>
+	<body>
+		<div>
+			<div class="cabeza">
+				<h1>Tienda Web V1.0</h1>
+				<ul class="nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Productos</a>
+						 <ul class="smenu">
+							<li><a href="insertar.html">Insertar Productos</a></li>
+							<li><a href="buscar.html">Buscar Productos</a></li>
+						 </ul>
+					</li>
+					<li><a href="">Clientes</a>
+						<ul class="smenu">
+							<li><a href="insertarClientes.html">Alta Cliente</a></li>
+							<li><a href="buscarClientes.html">Buscar Cliente</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="cuerpo">
+				<div class="subtitulo">
+					<h2>Buscar producto</h2>
+				</div>
+				<div class="formulario">
+					<form action=".\buscarProductos.php" method="post">
+						<p>Producto a Buscar: <input type="text" name="busquedaget" id="busquedaget"></p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="CodProducto" checked>C&oacute;digo de Producto</p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="Descripcion">Descripci&oacute;n</p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="Precio">Precio</p>
+						<p><input type="radio" id="buscarpor" name="buscarpor" value="Stock">Stock</p>
+						<button type="submit">ENVIAR</button>
+						<button type="reset">BORRAR</button>
+					</form>
+				</div>
+			</div>			
+		</div>
+		<!--Creado por Miguel Ángel Morales Peral-->
+	</body>
 </html>

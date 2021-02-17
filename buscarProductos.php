@@ -1,12 +1,15 @@
 <?php
-
 require './ClassProducto.php';
-
-// Variables 
-$servername = "localhost";
+ // Variables
+$servername = "192.168.31.53";
 $username = "equipoa";
 $password = "politecnico";
-$dbname = "productos";
+$dbname = "pruebas";
+
+
+
+// Variables 
+
 
 $busqueda = $_POST["busquedaget"];
 $categoria = $_POST["buscarpor"];
@@ -29,4 +32,12 @@ $buscarProducto->buscar($busqueda,$categoria,$conn);
 $conn->close();
 
 
+
 ?>
+=======
+<p align="center"><a href="index.html">Insertar Productos</a></p>
+<p align="center"><a  href="buscar.html">Buscar Productos</a></p>
+<p align="center"><a  href="index.html">Volver al Indice</a></p>
+
+</body>
+</html>
