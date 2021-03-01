@@ -154,4 +154,12 @@ Se pregunta a Alejandro Aguilar y a Miguel Ángel Morales
 
 11.02.21 21:58 Se mantiene el rol de history de Alexandre Ripoll Villegas y mantenimiento del server de Sergio Bazaga Granado.
 
-16.02.21 20:33 Alexandre Ripoll Villegas actualiza los archivos insertarProducto.php y buscarProductos.php a POO-
+16.02.21 20:33 Alexandre Ripoll Villegas actualiza los archivos insertarProducto.php y buscarProductos.php a POO.
+
+27.02.21 20:30 Sergio González Retamero instala PHPUnit en la Tienda 3.0.
+
+27.02.21 20:40 Se asigna la elaboración del archivo ClassClienteTest a Sergio González y ClassProductoTest a Alexandre Ripoll.
+
+28.02.21 19:51 Sergio González Retamero realiza la subida de ClassClienteTest.php.
+
+01.03.21 02:22 Alexandre Ripoll Villegas realiza la subida de los archivos ClassProducto.php y ClassProductoTest.php.
