@@ -3,7 +3,7 @@
 
 require './ClassProducto.php';
 
-$servername = "192.168.31.53";
+$servername = "localhost";
 
 $username = "equipoa";
 $password = "politecnico";

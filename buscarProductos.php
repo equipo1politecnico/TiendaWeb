@@ -1,7 +1,7 @@
 <?php
 require './ClassProducto.php';
  // Variables
-$servername = "192.168.31.53";
+$servername = "localhost";
 $username = "equipoa";
 $password = "politecnico";
 $dbname = "pruebas";
